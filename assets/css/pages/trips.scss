@@ -1,0 +1,117 @@
+.trip-container {
+  @include span-columns(9);
+  height: 100%;
+  min-height: 600px;
+  overflow: scroll;
+  padding: 0px 0px;
+  padding-right: 2.5%;
+
+  header {
+    width: 100%;
+    // height: 50px;
+    overflow: auto;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+
+    aside {
+      font-size: .8em;
+      color: darken($light-gray, 20%);
+      font-style: italic;
+    }
+  }
+  hr {
+    margin:0;
+  }
+}
+
+.trip-option {
+  @include span-columns(12);
+  // height: 150px;
+  overflow: auto;
+  background-color: lighten($light-gray, 10%);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+
+  h1 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+
+  .subscript {
+    margin-top: -5;
+  }
+  .location {
+    @include span-columns(10);
+    height: auto;
+  }
+
+  div.dest-keywords {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+  }
+
+  p.description {
+    width: 100%;
+    font-size: .7em;
+    color: darken($light-gray, 30%);
+  }
+
+  div.keyword {
+    font-size: .7em;
+    color: $light-gray;
+    height: 20px;
+    line-height: 10px;
+    width: auto;
+    padding: 5px;
+    margin: 5px;
+    opacity: .5;
+    float: left;
+    border-radius: 5px;
+    background-color: #34495E;
+  }
+
+  .price {
+    @include span-columns(2);
+    @include omega;
+    color: #1E824C;
+    padding: 5px 5px 5px;
+    text-align: center;
+    border: 1px solid $light-gray;
+    border-radius: 7px;
+    background-color: darken(#fff, 1%);
+    margin-top: 3%;
+
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+
+  table.price-breakdown {
+    font-size: .8em;
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: 5px;
+    td {
+      border: none;
+      padding: 1px;
+    }
+    td.label {
+      color: $medium-gray;
+    }
+  }
+
+  .other-info {
+    @include span-columns(10);
+  }
+}
+

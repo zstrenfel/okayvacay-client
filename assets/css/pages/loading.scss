@@ -1,0 +1,56 @@
+.no-trips {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+  background-color: lighten($light-gray, 10%);
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid lighten($light-gray, 8%);
+
+  &.error {
+    background-color: lighten(#EC644B, 35%);
+    border-color: lighten(#EC644B, 32%)
+  }
+
+  .moon {
+    font-size: 2em;
+    -moz-transform: scaleX(-1);
+  }
+
+  aside {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: darken($light-gray, 10%);
+  }
+}
+
+.in-in-out {
+ -webkit-animation: zach-fade 2s infinite; /* Safari 4+ */
+  -moz-animation:    zach-fade 2s infinite; /* Fx 2+ */
+  -o-animation:      zach-fade 2s infinite; /* Opera 12+ */
+  animation:         zach-fade 2s infinite;
+}
+
+
+
+@-webkit-keyframes zach-fade {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes zach-fade {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes zach-fade {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes zach-fade {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}

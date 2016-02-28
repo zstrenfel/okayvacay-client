@@ -1,0 +1,141 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+body {
+  @include background-image(url("../../imgs/geometry2.png"));
+  // font: $font-family;
+}
+
+.divider {
+  display: block;
+  margin: 10px 0;
+  padding: 0 5px;
+  border-top: solid 1px black;
+}
+
+.container {
+  @include outer-container();
+  background-color: #fff;
+  font-family: inherit;
+  overflow: auto;
+  height: 100vh;
+  position: relative;
+}
+.app {
+  display:block;
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+  border-bottom: 10px solid $dark-gray;
+}
+
+.form {
+    @include span-columns(4);
+    @include shift(4);
+    padding: 20px;
+    text-align: left;
+
+    label {
+      color: $dark-gray
+    }
+}
+
+
+.top-nav {
+    overflow: hidden;
+    background-color: $dark-gray;
+    height: 50px;
+    border: 2px solid $dark-gray;
+    position: relative;
+
+    img {
+      margin-left: 20px;
+      height: 100px;
+      width: auto;
+      opacity: 1;
+      display: inline;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: 300;
+      color: #fff;
+      line-height: 50px;
+      margin-left: 10px;
+      display: inline;
+      position: absolute;
+      top: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: right;
+    }
+
+    li {
+      width: 100px;
+      float: right;
+
+    }
+
+    li a {
+      display: block;
+      color: $dark-gray;
+      text-align: right;
+      padding: 10px 16px;
+      text-decoration: none;
+      color: $light-gray;
+      font-weight: 400;
+      font-size: .8em;
+      transition: color 300ms ease-in;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+}
+
+.menu-active {
+    background-color: #999999;
+    color: #000;
+}
+
+.half {
+  @include span-columns(6);
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: $dark-gray;
+  height: 10px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

@@ -1,0 +1,78 @@
+.home {
+  height: calc(100% - 50px);
+  overflow: auto;
+}
+
+  .third {
+    @include span-columns(12);
+    @include omega(3n);
+  }
+
+  h3.price {
+    font-weight: 300;
+    font-size: 1.3em;
+    color: darken($light-gray, 40%);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .full {
+    @include span-columns(12);
+  }
+
+.trip-params {
+  @extend .form;
+  @include span-columns(3);
+  @include shift(0);
+  background-color: lighten($medium-gray, 37%);
+  height: 100%;
+  min-height: 600px;
+  border-right: solid 2px lighten($medium-gray, 29%);
+
+  label {
+    margin-top: 10px;
+    font-size: .8em;
+    font-weight: 400;
+    color: $medium-gray;
+  }
+
+  .rc-slider {
+    margin-top: 10px;
+  }
+  .tags {
+    width: 100%;
+    overflow: auto;
+    background-color: lighten($light-gray, 10%);
+    border: 1px solid lighten($light-gray, 5%);
+    padding: 5px;
+    text-align: center;
+  }
+
+  div.keyword {
+    font-size: .7em;
+    height: 20px;
+    line-height: 10px;
+    width: calc(50% - 10px);
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    transition: background-color 300ms ease-in;
+    display: block;
+    background-color: #BDC3C7;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#BDC3C7, 10%);
+    }
+  }
+
+  div.keyword.selected {
+    background-color:#34495E;
+    color: $light-gray;
+  }
+
+  button.search {
+    margin-top: 15px;
+  }
+}
