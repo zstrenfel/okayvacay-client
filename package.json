@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.3",
+    "express": "^4.13.4",
     "jquery": "^2.2.1",
     "randomcolor": "^0.4.3",
     "react-datepicker": "^0.23.2",
