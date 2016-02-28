@@ -32,3 +32,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+
+#other unessecary junk
+/assets/css/pages
+/assets/css/utilities
+/assets/js/components
