@@ -51,6 +51,7 @@ export default React.createClass({
     e.preventDefault();
     self = this;
     this.setState({status: "loading"});
+    console.log(self.state.url);
     data = {
       date_start: self.state.startDate.format('YYYY-MM-DD'),
       date_end: self.state.endDate.format('YYYY-MM-DD'),
