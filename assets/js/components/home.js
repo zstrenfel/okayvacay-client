@@ -19,7 +19,7 @@ export default React.createClass({
       keywords: [],
       airport: "SFO",
       trip: null,
-      url: "http://localhost:3000/plantrips.json",
+      url: "http://okayvacay-server.herokuapp.com/plantrips.json",
       status: null
     }
   },
